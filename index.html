@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Dropdown</title>
+    <script src="jquery-3.7.0.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton">
+
+    <style>
+        body{
+            background-color: rgb(192, 66, 66);
+        }
+        
+        h1{
+            margin-left: 25%;  
+            font-family: Anton;
+            font-size: 100px;
+        }
+
+        label{
+            margin-left: 33%;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 80px;
+        }
+
+        select{
+            width: 500px;
+            height: 30px;
+            margin-left: 33%;
+            margin-top: 15px;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Dynamic Dropdown</h1>
+        <label for="country">Select Country:</label>
+    </div>
+    <div class="container">
+        <select id="country" name="country">
+            <option value="">Select</option>
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+        </select>
+    </div>
+
+    <div class="container">
+        <label for="city">Select City:</label>
+        </div>
+        <div class="container">
+        <select id="city" name="city">
+            <option value="">Select a country first</option>
+        </select>
+    </div>
+
+    
+</body>
+</html>
